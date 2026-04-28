@@ -16,7 +16,7 @@ Takeaway:
 - It offers the obfuscation or the process of obscuring the intended meaning of a data, though it is not a strong encryption so it must not be heavily relied on.
 - base64 decoding can be done on the terminal in three ways (at least that's how many I read from the tutorial I searched for this challenge.)
   > Decoding the string by copying it and pasting it in the terminal as such `base64 -d "string"`
-     I tried this on my terminal and it returns the "No such file or directory." I may have misunderstood this one.
+     I tried this on my terminal and it returns the "No such file or directory." I may have misunderstood this one. (I searched about base64, and it turns out it treated the string as a file. I asked AI Gemini and it said that base64 expects a file by default. I kind of understand but somehow I can't explain well but from the website `https://linux.die.net/man/1/base64` it showed the syntax of base64 `base64 [OPTION]... [FILE]`)
   > Decoding the string by converting it to a file, `base64 -d "string" > decodedtext.txt`
      I tried doing it how it was shown, but it didn't do anything. Then I used the format from the third method and mix it with what is said here which game me
      `echo "bDNhcm5fdGgzX3IwcDM1" | base64 -d > file.txt`, then I forgot the command `cat` before calling the file so it gave me "-bash: file.txt: command not found".
