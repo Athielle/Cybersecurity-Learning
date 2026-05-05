@@ -21,3 +21,6 @@ Takeaway:
 - Removing files make use of the command `rm` which means remove. `-rf` is an option within the rm command. `-r` means recursive delete which deletes directories and all its contents. `-f` is force delete which allows the user to delete files without confirmation. It can be written as `-r -f` or `-rf`.
 - I also learned that the command `rm -rf` can be a dangeorus tool since it does its job without asking the user for confirmation.
 - the `*` at the end means that everything that matches the file preceding it will be included in the command. Better be careful when using these commands as I might delete something I shouldn't.
+
+Update (05/05/2026)
+I remembered the command `cat` and wondered if I could've used it instead of `./`. I later learned that those two have different functions. `./` is used to execute a file as if it is a program, while `cat` shows the contents of a file, likely a text file. 
